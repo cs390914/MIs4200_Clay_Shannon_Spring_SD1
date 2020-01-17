@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIs4200_Clay_Shannon_Spring_SD1", "MIs4200_Clay_Shannon_Spring_SD1.csproj", "{9F1C56F3-9067-4D66-8ED8-DBB2F5D4682B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F1C56F3-9067-4D66-8ED8-DBB2F5D4682B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1C56F3-9067-4D66-8ED8-DBB2F5D4682B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1C56F3-9067-4D66-8ED8-DBB2F5D4682B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1C56F3-9067-4D66-8ED8-DBB2F5D4682B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {229B1B24-D7A4-455C-9169-56566390CB52}
+	EndGlobalSection
+EndGlobal
