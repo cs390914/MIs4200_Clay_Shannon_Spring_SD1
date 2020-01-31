@@ -1,0 +1,58 @@
+﻿@model MIs4200_Clay_Shannon_Spring_SD1.Models.TrainingDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TrainingDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Trainer.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trainer.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainingSessions.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainingSessions.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Equipment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Equipment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainingDuration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainingDuration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkoutType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkoutType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TrainingDetailID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

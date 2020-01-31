@@ -12,7 +12,6 @@ namespace MIs4200_Clay_Shannon_Spring_SD1.Models
         [Key]
         public int TrainingSessionID { get; set; }
         public string Description { get; set; }
-        public int TrainingTime { get; set; }
         public DateTime TrainingSessionDate { get; set; }
         public int ClientID { get; set; }
         public virtual Client Client { get; set; } 

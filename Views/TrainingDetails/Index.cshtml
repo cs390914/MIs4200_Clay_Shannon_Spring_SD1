@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MIs4200_Clay_Shannon_Spring_SD1.Models.TrainingDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Trainer.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainingSessions.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Equipment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainingDuration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkoutType)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trainer.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrainingSessions.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Equipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrainingDuration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkoutType)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TrainingDetailID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TrainingDetailID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TrainingDetailID })
+        </td>
+    </tr>
+}
+
+</table>
