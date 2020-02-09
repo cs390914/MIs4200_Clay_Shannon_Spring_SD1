@@ -10,6 +10,7 @@ namespace MIs4200_Clay_Shannon_Spring_SD1.Migrations.MISContext
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             MigrationsDirectory = @"Migrations\MISContext";
         }
 
