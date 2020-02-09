@@ -10,12 +10,12 @@ namespace MIs4200_Clay_Shannon_Spring_SD1.DAL
 {
     public class MIS4200Context : DbContext 
     {
-        public MIS4200Context() : base("name=DefaultConnection")
+        public MIS4200Context() : base("name=cs390914-SDConnection")
         {
 
 
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<MIS4200Context,
-            MIs4200_Clay_Shannon_Spring_SD1.Migrations.MISContext.Configuration>("cs390914-SDConnection"));
+            Migrations.MISContext.Configuration>("cs390914-SDConnection"));
         }
         public DbSet<Client> Clients { get; set; }
         public DbSet<TrainingSessions> TrainingSessions { get; set; }
